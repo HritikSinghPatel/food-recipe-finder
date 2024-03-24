@@ -1,0 +1,28 @@
+.recipeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+/* Define styles for the unordered list */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Define styles for list items */
+li {
+    background-color: #f2f2f2; /* Background color */
+    padding: 10px; /* Padding around each item */
+    margin-bottom: 5px; /* Margin bottom between items */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect on list items */
+li:hover {
+    background-color: #ddd; /* Change background color on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}

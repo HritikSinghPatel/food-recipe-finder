@@ -1,0 +1,54 @@
+.recipe{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 4px 3px 10px 0 #aaa;
+}
+.recipeName{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+.incredientName{
+    font-size: 18px;
+    border: solid 1px brown;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: brown;
+    text-align: center;
+}
+.seeMore{
+    font-size: 18px;
+    border: solid 1px yellow;
+    color: black;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: yellow;
+    text-align: center;
+}
+.favoriteButton {
+    background-color: green; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding to provide spacing around text */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin between buttons */
+    transition-duration: 0.4s; /* Smooth transition on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow */
+
+}
+img{
+    width: 200px;
+}

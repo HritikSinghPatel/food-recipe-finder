@@ -1,0 +1,57 @@
+.header{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 #555;
+    justify-content: space-between;
+};
+img{
+
+    width: 360px;
+    height: 36px;
+    margin: 15px;
+    /* flex: 1; */
+
+};
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 50%;
+};
+.searchField{
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+};
+.appName{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* Define styles for the button */
+.button {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #007bff; /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
