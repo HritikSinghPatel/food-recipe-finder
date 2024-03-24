@@ -30,7 +30,7 @@ The application will serve as a platform where users can explore a variety of fo
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/HritikSinghPatel/ipo-and-currencyexchange-dashboard.git
+    git clone https://github.com/HritikSinghPatel/food-recipe-finder.git
     
     ```
 
