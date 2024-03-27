@@ -6,22 +6,17 @@ import { useAuth } from '../Auth/AuthContext';
 
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [logged, setLogged] = useState(false);
+  const [user, setUser] = useState('');
+  const [pass, setPass] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { login } = useAuth();
-//   const history = useHistory();
-//   const location = useLocation();
 
-//   const { from } = location.state || { from: { pathname: '/' } };
-
-  const handleLogin = () => {
-    login(username, password);
-    setLogged(true);
-    // history.replace(from);
+  const handleUserLogin = () => {
+    login(user, pass);
+    setIsLoggedIn(true);
   };
 
-  if (logged) {
+  if (isLoggedIn) {
     return <Navigate to="/dashboard" />;
   }
 
@@ -34,8 +29,8 @@ const Login = () => {
             Username:
             <input
               type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={user}
+              onChange={(e) => setUser(e.target.value)}
               className="input-field"
             />
           </label>
@@ -43,8 +38,8 @@ const Login = () => {
             Password:
             <input
               type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
               className="input-field"
             />
           </label>
@@ -52,12 +47,12 @@ const Login = () => {
             Confirm Password:
             <input
               type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
               className="input-field"
             />
           </label>
-          <button type="button" onClick={handleLogin} className="button">
+          <button type="button" onClick={handleUserLogin} className="button">
             Login
           </button>
         </form>
